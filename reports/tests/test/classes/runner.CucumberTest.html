@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CucumberTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CucumberTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/runner.html">runner</a> &gt; CucumberTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">14</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.142s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Checkout berhasil</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Checkout dengan data kosong</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Continue Shopping</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Login berhasil</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Melihat Detail Produk</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Melihat Item pada Cart</td>
+<td class="success">0.089s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Membuka halaman Checkout</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Menambahkan Produk ke Cart</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Menghapus Produk dari Inventory</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Password kosong</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Password salah</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Remove Item dari Cart</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Username kosong</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Username salah</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+?[1mScenario:?[22m Melihat Item pada Cart                                            ?[90m# classpath:features/Cart.feature:8?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser melihat item yang telah ditambahkan pada Cart?[39m                 ?[90m# com.ridho.stepdef.CartStepDef.user_melihat_item_yang_telah_ditambahkan_pada_cart()?[39m
+
+?[1mScenario:?[22m Remove Item dari Cart                                             ?[90m# classpath:features/Cart.feature:11?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser menekan tombol Remove pada Cart?[39m                               ?[90m# com.ridho.stepdef.CartStepDef.user_menekan_tombol_remove_pada_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mItem berhasil dihapus dari Cart?[39m                                    ?[90m# com.ridho.stepdef.CartStepDef.item_berhasil_dihapus_dari_cart()?[39m
+
+?[1mScenario:?[22m Continue Shopping                                                 ?[90m# classpath:features/Cart.feature:15?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser menekan tombol Continue Shopping?[39m                              ?[90m# com.ridho.stepdef.CartStepDef.userMenekanTombolContinueShopping()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser kembali ke halaman Inventory?[39m                                  ?[90m# com.ridho.stepdef.CartStepDef.userKembaliKeHalamanInventory()?[39m
+
+?[1mScenario:?[22m Membuka halaman Checkout                                          ?[90m# classpath:features/Cart.feature:19?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser menekan tombol Checkout?[39m                                       ?[90m# com.ridho.stepdef.CartStepDef.user_checkout()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser diarahkan ke halaman Checkout?[39m                                 ?[90m# com.ridho.stepdef.CartStepDef.user_redirect_checkout()?[39m
+
+?[1mScenario:?[22m Melihat Detail Produk                                             ?[90m# classpath:features/Inventory.feature:6?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser menekan detail item yang diberikan?[39m                            ?[90m# com.ridho.stepdef.InventoryStepDef.user_menekan_detail_item()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser redirect pada page detail inventory?[39m                           ?[90m# com.ridho.stepdef.InventoryStepDef.user_redirect_detail_inventory()?[39m
+
+?[1mScenario:?[22m Menambahkan Produk ke Cart                                        ?[90m# classpath:features/Inventory.feature:11?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser menambahkan item pada button add to cart?[39m                      ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser melihat item keranjang ditambah?[39m                               ?[90m# com.ridho.stepdef.InventoryStepDef.user_melihat_item_keranjang_ditambah()?[39m
+
+?[1mScenario:?[22m Menghapus Produk dari Inventory                                   ?[90m# classpath:features/Inventory.feature:16?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser menambahkan item pada button add to cart?[39m                      ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menghapus item pada button remove?[39m                              ?[90m# com.ridho.stepdef.InventoryStepDef.user_menghapus_item()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser melihat item keranjang dihapus?[39m                                ?[90m# com.ridho.stepdef.InventoryStepDef.user_melihat_item_keranjang_dihapus()?[39m
+
+?[1mScenario:?[22m Checkout dengan data kosong                                       ?[90m# classpath:features/checkout.feature:9?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Checkout?[39m                                        ?[90m# com.ridho.stepdef.CartStepDef.user_checkout()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan First Name ?[1m&quot;&quot;?[22m?[39m                                      ?[90m# com.ridho.stepdef.CheckoutStepDef.input_first_name(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan Last Name ?[1m&quot;&quot;?[22m?[39m                                        ?[90m# com.ridho.stepdef.CheckoutStepDef.input_last_name(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan Zip atau Postal Code ?[1m&quot;&quot;?[22m?[39m                             ?[90m# com.ridho.stepdef.CheckoutStepDef.input_postal_code(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Continue Checkout?[39m                               ?[90m# com.ridho.stepdef.CheckoutStepDef.continue_checkout()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mMuncul pesan error blank?[39m                                           ?[90m# com.ridho.stepdef.CheckoutStepDef.error_blank()?[39m
+
+?[1mScenario:?[22m Checkout berhasil                                                 ?[90m# classpath:features/checkout.feature:17?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Checkout?[39m                                        ?[90m# com.ridho.stepdef.CartStepDef.user_checkout()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan First Name ?[1m&quot;Sayid&quot;?[22m?[39m                                 ?[90m# com.ridho.stepdef.CheckoutStepDef.input_first_name(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan Last Name ?[1m&quot;Ridho&quot;?[22m?[39m                                   ?[90m# com.ridho.stepdef.CheckoutStepDef.input_last_name(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan Zip atau Postal Code ?[1m&quot;12312&quot;?[22m?[39m                        ?[90m# com.ridho.stepdef.CheckoutStepDef.input_postal_code(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Continue Checkout?[39m                               ?[90m# com.ridho.stepdef.CheckoutStepDef.continue_checkout()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser melakukan checkout overview?[39m                                    ?[90m# com.ridho.stepdef.CheckoutStepDef.checkout_overview()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mCheckout berhasil!?[39m                                                 ?[90m# com.ridho.stepdef.CheckoutStepDef.checkout_success()?[39m
+
+?[1mScenario:?[22m Login berhasil                                                    ?[90m# classpath:features/login.feature:3?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser berhasil masuk ke Dashboard?[39m                                   ?[90m# com.ridho.stepdef.LoginStepDef.user_berhasil_masuk_ke_dashboard()?[39m
+
+?[1mScenario:?[22m Password salah                          ?[90m# classpath:features/login.feature:8?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser berada pada halaman login?[39m          ?[90m# com.ridho.stepdef.LoginStepDef.user_berada_pada_halaman_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan username ?[1m&quot;standard_user&quot;?[22m?[39m ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_username(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan password ?[1m&quot;123456&quot;?[22m?[39m         ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_password(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Login?[39m                 ?[90m# com.ridho.stepdef.LoginStepDef.user_menekan_tombol_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mMuncul pesan error?[39m                       ?[90m# com.ridho.stepdef.LoginStepDef.muncul_pesan_error()?[39m
+
+?[1mScenario:?[22m Username kosong                       ?[90m# classpath:features/login.feature:16?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser berada pada halaman login?[39m        ?[90m# com.ridho.stepdef.LoginStepDef.user_berada_pada_halaman_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan username ?[1m&quot;&quot;?[22m?[39m            ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_username(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_password(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Login?[39m               ?[90m# com.ridho.stepdef.LoginStepDef.user_menekan_tombol_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mMuncul pesan error?[39m                     ?[90m# com.ridho.stepdef.LoginStepDef.muncul_pesan_error()?[39m
+
+?[1mScenario:?[22m Username salah                                                                                                                   ?[90m# classpath:features/login.feature:24?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser berada pada halaman login?[39m                                                                                                   ?[90m# com.ridho.stepdef.LoginStepDef.user_berada_pada_halaman_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan username ?[1m&quot;waodjfhiwaldfhilswjfsiofghslivhdswilfgvhslaidfhsiofhsiodfhdslidfhsildfhlsidfhdlsifhlsidfhsildfyslifygh&quot;?[22m?[39m ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_username(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan password ?[1m&quot;secret_sauce&quot;?[22m?[39m                                                                                            ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_password(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Login?[39m                                                                                                          ?[90m# com.ridho.stepdef.LoginStepDef.user_menekan_tombol_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mMuncul pesan error?[39m                                                                                                                ?[90m# com.ridho.stepdef.LoginStepDef.muncul_pesan_error()?[39m
+
+?[1mScenario:?[22m Password kosong                         ?[90m# classpath:features/login.feature:32?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser berada pada halaman login?[39m          ?[90m# com.ridho.stepdef.LoginStepDef.user_berada_pada_halaman_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan username ?[1m&quot;standard_user&quot;?[22m?[39m ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_username(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser memasukkan password ?[1m&quot;&quot;?[22m?[39m               ?[90m# com.ridho.stepdef.LoginStepDef.user_memasukkan_password(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Login?[39m                 ?[90m# com.ridho.stepdef.LoginStepDef.user_menekan_tombol_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mMuncul pesan error?[39m                       ?[90m# com.ridho.stepdef.LoginStepDef.muncul_pesan_error()?[39m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jul 17, 2026 8:43:45 PM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+WARNING: TestEngine with ID 'cucumber' encountered a non-critical issue during test discovery:
+
+(1) [WARNING] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10</a> at Jul 17, 2026, 8:43:45 PM</p>
+</div>
+</div>
+</body>
+</html>
