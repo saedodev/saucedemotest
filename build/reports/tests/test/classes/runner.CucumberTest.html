@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.142s</div>
+<div class="counter">0.143s</div>
 <p>duration</p>
 </div>
 </td>
@@ -107,47 +107,47 @@
 </tr>
 <tr>
 <td class="success">Melihat Item pada Cart</td>
-<td class="success">0.089s</td>
+<td class="success">0.090s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Membuka halaman Checkout</td>
-<td class="success">0.003s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Menambahkan Produk ke Cart</td>
-<td class="success">0.006s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Menghapus Produk dari Inventory</td>
-<td class="success">0.003s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Password kosong</td>
-<td class="success">0.004s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Password salah</td>
-<td class="success">0.004s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Remove Item dari Cart</td>
-<td class="success">0.004s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">Username kosong</td>
 <td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Username salah</td>
+<td class="success">Password salah</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Remove Item dari Cart</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Username kosong</td>
 <td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Username salah</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -201,7 +201,7 @@
 
 ?[1mScenario:?[22m Checkout dengan data kosong                                       ?[90m# classpath:features/checkout.feature:9?[39m
   ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
-  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item lain pada button add to cart?[39m                  ?[90m# com.ridho.stepdef.CommonStepDef.user_add_another_item()?[39m
   ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
   ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Checkout?[39m                                        ?[90m# com.ridho.stepdef.CartStepDef.user_checkout()?[39m
   ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan First Name ?[1m&quot;&quot;?[22m?[39m                                      ?[90m# com.ridho.stepdef.CheckoutStepDef.input_first_name(java.lang.String)?[39m
@@ -212,7 +212,7 @@
 
 ?[1mScenario:?[22m Checkout berhasil                                                 ?[90m# classpath:features/checkout.feature:17?[39m
   ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser login sebagai ?[1m&quot;standard_user&quot;?[22m dengan password ?[1m&quot;secret_sauce&quot;?[22m?[39m ?[90m# com.ridho.stepdef.CommonStepDef.user_login_sebagai(java.lang.String,java.lang.String)?[39m
-  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item pada button add to cart?[39m                       ?[90m# com.ridho.stepdef.CommonStepDef.user_menambahkan_item_pada_button_add_to_cart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menambahkan item lain pada button add to cart?[39m                  ?[90m# com.ridho.stepdef.CommonStepDef.user_add_another_item()?[39m
   ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser membuka halaman Cart?[39m                                           ?[90m# com.ridho.stepdef.CommonStepDef.user_membuka_halaman_cart()?[39m
   ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Checkout?[39m                                        ?[90m# com.ridho.stepdef.CartStepDef.user_checkout()?[39m
   ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser memasukkan First Name ?[1m&quot;Sayid&quot;?[22m?[39m                                 ?[90m# com.ridho.stepdef.CheckoutStepDef.input_first_name(java.lang.String)?[39m
@@ -259,7 +259,7 @@
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Jul 17, 2026 8:43:45 PM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+<pre>Jul 18, 2026 11:08:02 AM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
 WARNING: TestEngine with ID 'cucumber' encountered a non-critical issue during test discovery:
 
 (1) [WARNING] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead
@@ -274,7 +274,7 @@ WARNING: TestEngine with ID 'cucumber' encountered a non-critical issue during t
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.10</a> at Jul 17, 2026, 8:43:45 PM</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at Jul 18, 2026, 11:08:02 AM</p>
 </div>
 </div>
 </body>
