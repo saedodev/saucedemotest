@@ -52,6 +52,16 @@ public class InventoryPage {
         WaitUtil.pause(3000);
     }
 
+    public void clickAddToCart2() {
+        wait.until(
+                ExpectedConditions.elementToBeClickable(addToCart2)
+        ).click();
+        wait.until(
+                ExpectedConditions.elementToBeClickable(addToCart3)
+        ).click();
+        WaitUtil.pause(3000);
+    }
+
     public String getCartBadge() {
         WaitUtil.pause(3000);
         return wait.until(

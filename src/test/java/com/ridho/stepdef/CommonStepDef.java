@@ -30,6 +30,13 @@ public class CommonStepDef {
 
     }
 
+    @When("User menambahkan item lain pada button add to cart")
+    public void user_add_another_item() {
+
+        inventoryPage.clickAddToCart2();
+
+    }
+
     @When("User membuka halaman Cart")
     public void user_membuka_halaman_cart() {
 

@@ -2,7 +2,7 @@ Feature: Checkout SauceDemo
 
   Background:
     Given User login sebagai "standard_user" dengan password "secret_sauce"
-    And User menambahkan item pada button add to cart
+    And User menambahkan item lain pada button add to cart
     And User membuka halaman Cart
     And User menekan tombol Checkout
 
