@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.CucumberTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-07-18T03:08:02" hostname="KUDANIL" time="0.157">
+<testsuite name="runner.CucumberTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-07-21T07:16:25" hostname="KUDANIL" time="0.157">
   <properties/>
   <testcase name="Melihat Item pada Cart" classname="runner.CucumberTest" time="0.09"/>
-  <testcase name="Remove Item dari Cart" classname="runner.CucumberTest" time="0.005"/>
+  <testcase name="Remove Item dari Cart" classname="runner.CucumberTest" time="0.004"/>
   <testcase name="Continue Shopping" classname="runner.CucumberTest" time="0.004"/>
   <testcase name="Membuka halaman Checkout" classname="runner.CucumberTest" time="0.004"/>
-  <testcase name="Melihat Detail Produk" classname="runner.CucumberTest" time="0.003"/>
-  <testcase name="Menambahkan Produk ke Cart" classname="runner.CucumberTest" time="0.005"/>
-  <testcase name="Menghapus Produk dari Inventory" classname="runner.CucumberTest" time="0.004"/>
+  <testcase name="Melihat Detail Produk" classname="runner.CucumberTest" time="0.002"/>
+  <testcase name="Menambahkan Produk ke Cart" classname="runner.CucumberTest" time="0.006"/>
+  <testcase name="Menghapus Produk dari Inventory" classname="runner.CucumberTest" time="0.003"/>
   <testcase name="Checkout dengan data kosong" classname="runner.CucumberTest" time="0.005"/>
-  <testcase name="Checkout berhasil" classname="runner.CucumberTest" time="0.007"/>
-  <testcase name="Login berhasil" classname="runner.CucumberTest" time="0.003"/>
-  <testcase name="Password salah" classname="runner.CucumberTest" time="0.003"/>
+  <testcase name="Checkout berhasil" classname="runner.CucumberTest" time="0.008"/>
+  <testcase name="Login berhasil" classname="runner.CucumberTest" time="0.004"/>
+  <testcase name="Password salah" classname="runner.CucumberTest" time="0.004"/>
   <testcase name="Username kosong" classname="runner.CucumberTest" time="0.004"/>
   <testcase name="Username salah" classname="runner.CucumberTest" time="0.003"/>
   <testcase name="Password kosong" classname="runner.CucumberTest" time="0.003"/>
@@ -114,7 +114,7 @@
   ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser menekan tombol Login?[39m                 ?[90m# com.ridho.stepdef.LoginStepDef.user_menekan_tombol_login()?[39m
   ?[32m✔?[39m ?[32m?[1mThen ?[22mMuncul pesan error?[39m                       ?[90m# com.ridho.stepdef.LoginStepDef.muncul_pesan_error()?[39m
 ]]></system-out>
-  <system-err><![CDATA[Jul 18, 2026 11:08:02 AM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+  <system-err><![CDATA[Jul 21, 2026 3:16:25 PM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
 WARNING: TestEngine with ID 'cucumber' encountered a non-critical issue during test discovery:
 
 (1) [WARNING] The classpath resource selector 'features' should not be used to select features in a package. Use the package selector with 'features' instead

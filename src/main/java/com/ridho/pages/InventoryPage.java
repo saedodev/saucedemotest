@@ -4,14 +4,10 @@ import com.ridho.driver.DriverFactory;
 import com.ridho.utils.WaitUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class InventoryPage {
     WebDriver driver = DriverFactory.getDriver();
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    private WaitUtil wait = new WaitUtil(driver);
 
     private final By title = By.className("title");
 
@@ -26,58 +22,35 @@ public class InventoryPage {
     private final By backButton = By.id("back-to-products");
 
     public String getTitle() {
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(title)
-        ).getText();
+        return wait.waitUntilVisible(title).getText();
     }
 
     public void clickDetailProduct() {
-        wait.until(
-                ExpectedConditions.elementToBeClickable(detailProduct)
-        ).click();
-        WaitUtil.pause(3000);
+        wait.waitUntilClickable(detailProduct).click();
     }
 
     public void isBackButtonDisplayed() {
-        wait.until(
-                ExpectedConditions.elementToBeClickable(backButton)
-        ).click();
-        WaitUtil.pause(3000);
+        wait.waitUntilClickable(backButton).click();
     }
 
     public void clickAddToCart() {
-        wait.until(
-                ExpectedConditions.elementToBeClickable(addToCart)
-        ).click();
-        WaitUtil.pause(3000);
+        wait.waitUntilClickable(addToCart).click();
     }
 
     public void clickAddToCart2() {
-        wait.until(
-                ExpectedConditions.elementToBeClickable(addToCart2)
-        ).click();
-        wait.until(
-                ExpectedConditions.elementToBeClickable(addToCart3)
-        ).click();
-        WaitUtil.pause(3000);
+        wait.waitUntilClickable(addToCart2).click();
+        wait.waitUntilClickable(addToCart3).click();
     }
 
     public String getCartBadge() {
-        WaitUtil.pause(3000);
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(cartBadge)
-        ).getText();
+        return wait.waitUntilVisible(cartBadge).getText();
     }
 
     public void clickRemove() {
-        wait.until(
-                ExpectedConditions.elementToBeClickable(removeButton)
-        ).click();
-        WaitUtil.pause(3000);
+        wait.waitUntilClickable(removeButton).click();
     }
 
     public boolean isCartBadgeDisplayed() {
-        WaitUtil.pause(3000);
-        return !driver.findElements(cartBadge).isEmpty();
+        return !wait.waitUntilInvisible(cartBadge);
     }
 }

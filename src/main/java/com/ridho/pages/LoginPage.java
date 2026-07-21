@@ -4,13 +4,10 @@ import com.ridho.driver.DriverFactory;
 import com.ridho.utils.WaitUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class LoginPage {
     WebDriver driver = DriverFactory.getDriver();
+    private WaitUtil wait = new WaitUtil(driver);
 
     private final By txtUsername = By.id("user-name");
     private final By txtPassword = By.id("password");
@@ -22,50 +19,22 @@ public class LoginPage {
     }
 
     public void inputUsername(String username) {
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(5));
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(txtUsername))
-                .clear();
-
-        driver.findElement(txtUsername).sendKeys(username);
-
-        WaitUtil.pause(3000);
+        wait.waitUntilVisible(txtUsername).clear();
+        wait.waitUntilVisible(txtUsername).sendKeys(username);
 
     }
 
     public void inputPassword(String password) {
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(5));
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(txtPassword))
-                .clear();
-
-        driver.findElement(txtPassword).sendKeys(password);
-
-        WaitUtil.pause(3000);
+        wait.waitUntilVisible(txtPassword).clear();
+        wait.waitUntilVisible(txtPassword).sendKeys(password);
     }
 
     public void clickLogin() {
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(5));
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(btnLogin));
-
-        driver.findElement(btnLogin).click();
-
-        WaitUtil.pause(3000);
+        wait.waitUntilClickable(btnLogin).click();
     }
 
     public String getErrorMessage() {
-        WebDriverWait wait =
-                new WebDriverWait(driver, Duration.ofSeconds(5));
-
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(
-                        lblError
-                )
-        ).getText();
+        return wait.waitUntilVisible(lblError).getText();
     }
 
     public void login(String username, String password){
@@ -74,7 +43,5 @@ public class LoginPage {
         inputUsername(username);
         inputPassword(password);
         clickLogin();
-
-        WaitUtil.pause(1000);
     }
 }

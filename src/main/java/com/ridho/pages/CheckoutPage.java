@@ -1,18 +1,14 @@
 package com.ridho.pages;
 
 import com.ridho.driver.DriverFactory;
+import com.ridho.utils.WaitUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class CheckoutPage {
 
     WebDriver driver = DriverFactory.getDriver();
-    WebDriverWait wait =
-            new WebDriverWait(driver, Duration.ofSeconds(5));
+    private WaitUtil wait = new WaitUtil(driver);
 
     private final By firstName =
             By.id("first-name");
@@ -36,59 +32,31 @@ public class CheckoutPage {
             By.className("complete-header");
 
     public void inputFirstName(String value) {
-
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(firstName)
-        ).sendKeys(value);
-
+        wait.waitUntilVisible(firstName).sendKeys(value);
     }
 
     public void inputLastName(String value) {
-
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(lastName)
-        ).sendKeys(value);
-
+        wait.waitUntilVisible(lastName).sendKeys(value);
     }
 
     public void inputPostalCode(String value) {
-
-        wait.until(
-                ExpectedConditions.visibilityOfElementLocated(postalCode)
-        ).sendKeys(value);
-
+        wait.waitUntilVisible(postalCode).sendKeys(value);
     }
 
     public void clickContinue() {
-
-        wait.until(
-                ExpectedConditions.elementToBeClickable(continueButton)
-        ).click();
-
+        wait.waitUntilVisible(continueButton).click();
     }
 
     public String getErrorMessage() {
-
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(error)
-        ).getText();
-
+        return wait.waitUntilVisible(error).getText();
     }
 
     public void clickFinish() {
-
-        wait.until(
-                ExpectedConditions.elementToBeClickable(finishButton)
-        ).click();
-
+        wait.waitUntilVisible(finishButton).click();
     }
 
     public boolean isCheckoutComplete() {
-
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(complete)
-        ).isDisplayed();
-
+        return wait.waitUntilVisible(complete).isDisplayed();
     }
 
 }
